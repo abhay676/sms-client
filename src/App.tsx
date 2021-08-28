@@ -1,8 +1,13 @@
 import React from 'react';
-import './App.css';
-
+import Router from './router/Router';
+import Toast from './shared/Toast/Toast';
 function App() {
-  return <div>Home Screen</div>;
+  return (
+    <React.Fragment>
+      <Router />
+      <Toast />
+    </React.Fragment>
+  );
 }
 
 export default App;
